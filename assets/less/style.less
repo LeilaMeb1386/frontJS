@@ -1,0 +1,45 @@
+@baseColor: black;
+@accentColor: lightgrey;
+@textsize: 10px;
+@titlesize: 20px;
+
+.accent{
+  background-color: @accentColor;
+  border: 1px solid @baseColor;
+}
+.no-padding-margin{
+  margin: 0;
+  padding: 0;
+}
+.base-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+.no-padding-margin();
+
+}
+.choice-container{
+  .base-flex();
+  height: 50%;
+  img{
+    height: 100px;
+    &:hover{
+      cursor: pointer;
+      background-color: red;
+    }
+  }
+}
+
+.game-container {
+  .base-flex();
+  flex-direction: column;
+  border: 1px solid @baseColor;
+  height: 50vh;
+  text-align: center;
+}
+.player-history-container{
+  border: 1px solid @baseColor;
+  height: 25vh;
+}
